@@ -15,9 +15,35 @@ header{
 nav{
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
-#main{
-    margin: 0px 3vw 0px 1.7vw ;
+.nav-part2 ul{
+    display: flex;
+    margin-right: 6vw;
+    gap: 4vw;
+}
+.nav-part2 ul li a{
+    font-size: small;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.nav-img{
+   height: 2.4vh;
+   width: 1.5vw;
+   transition: 0.25s;
+
+}
+.nav-img-1:hover{
+    height: 1.9vh;
+}
+.nav-img-2:hover{
+    transform: rotate(-30deg);
+}
+#main,header{
+    margin: 4vh 2vw 0px 2vw ;
 }
 #main-header {
     position: relative;
@@ -179,7 +205,7 @@ main {
 }
 .item div p {
     text-transform: uppercase;
-    font-size: x-large;
+    font-size: large;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .item img {
@@ -203,8 +229,16 @@ main {
 .fake-slider{
     display: flex;
     justify-content: space-between;
-    /* position: relative; */
+    margin-top: 50vh;
     
+}
+#slider{
+    margin-top: 10vh;
+}
+.slider{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 .silde-box{
     height: 20px;
@@ -213,10 +247,8 @@ main {
     border-radius: 100%;
 }
 .slide-option{
-    display: inline-block;
     margin-top: 5vh;
-
-    
+    /* display: inline-block; */
 }
 .slide-text p{
     font-size: 1.8vw;
@@ -271,25 +303,35 @@ main {
     justify-content: center;
 }
 #docs{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 2vw;
+    display:flex;
     margin-top: 50vh;
+    justify-content: space-between;
+    height: 100vh;
+
 }
-/* .text-elem{
-    max-width: 30%;
-} */
-.img-elem{
-    background: red;
-    height: auto;
-    /* max-width:40vw; */
-    overflow: hidden;
+.elem{
+    width: 30vw;
 }
-#docs .img-elem img{
-    object-fit: cover;
+.elem-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1vw;
+
+}
+
+
+.elem-img img{
     height: 100%;
     width: 100%;
+    background-color: #000;
 }
+/* 
+    .text-elem{
+        max-width: 150%;
+        min-width: 130%;
+    } */
+
+
 .text-elem p{
     font-size: 1.2vw;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -330,7 +372,37 @@ main {
     width: 12vw;
     border-color: #0f0f0fa6;
 }
+footer{
+    min-height: 100vh;
+    /* display: grid;
+    gap: 10vh; */
+}
 
+.write-email input::placeholder{
+    text-transform: uppercase;
+    color: black;
+    /* font-size: 450%; */
+    font-weight: 900;
+    font-size: 300%;
+    width: 80%;
+}
+.write-email input{
+  
+    width: 100vw;
+    padding: 5vh 0vw 2vh 0vw;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-text-right,.footer-text-left ul li{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 @media (max-width: 600px) {
     #main{
         margin: 0px 3.5vw 0px 3.5vw;
@@ -404,14 +476,60 @@ main {
         font-size: 3.3vw;
         text-align: center;
     }
-    .slide-option p {
-        font-size: small;       
+    .fake-slider{
+        gap: 8px;
     }
-    .slide-option div{
+    .slide-text p {
+        font-size: xx-small; 
+        text-align: justify;
+    }
+    .silde-box{
         height: 1.5vh;
         width: 1.5vh;
     }
+
     .line-anim-text p{
+        font-size: xx-small;
+    }
+    #submit{
+        height: 55vh;
+    }
+    .submit-large-text{
+        position: relative;
+        bottom: 0px;
+        padding-bottom: 0vh;
+    }
+    .submit-large-text p{
+        max-width: 83vw;
+        font-weight:900;
+        font-size: 7.5vw;
+        line-height: 7vw;
+    }
+    .submit-button{
+        position: relative;
+        width: 100%;
         font-size: medium;
+    }
+    .last-submit-parent{
+        position: relative;
+        top:1.5vh;
+    }
+    .submit-last{
+        max-width: 60vw;
+        font-size:small ;
+    }
+    #docs{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #docs .elem-img img{
+        width: 50%;
+        height: 30vh;
+    }
+    .elem-img{
+        display: flex;
+        height: auto;
+        width: auto;
+        gap: 6.5vw;
     }
 }
