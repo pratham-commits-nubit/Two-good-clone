@@ -44,6 +44,16 @@ nav{
 .nav-img-2:hover{
     transform: rotate(-30deg);
 }
+.nav-part2 ul .nav-designs{
+    display: flex; 
+    align-items: center; 
+    gap: 2.2vw; 
+    height: 100%; 
+    width:fit-content; 
+    background: #ffffff; 
+    padding: 5px 15px; 
+    border-radius: 30px;
+}
 #main,header{
     margin: 4vh 2vw 0px 2vw ;
 }
@@ -408,6 +418,9 @@ section{
 @media (max-width: 600px) {
     .nav-part2 ul .nav-li{
         display: none;
+    }
+    .nav-part2 ul .nav-designs{
+        width: 5vw;
     }
     #main{
         margin: 0px 3.5vw 0px 3.5vw;
