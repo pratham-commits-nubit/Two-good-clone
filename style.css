@@ -453,7 +453,7 @@ section{
         object-fit: cover;
     }
     #mouse-hover {
-        padding: 5vh 8.5vw;
+        padding: 5vh 8vw;
         font-size: large;
         pointer-events: none;
     }
