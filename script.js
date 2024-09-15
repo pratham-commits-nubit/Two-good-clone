@@ -68,7 +68,7 @@ function locomotiveAnimation() {
         scrub: true,
       },
     });
-    gsap.to("#nav-part2 ul .nav-li", {
+    gsap.to(".nav-part2 ul .nav-li", {
       transform: "translateY(-100%)",
       opacity: 0,
       scrollTrigger: {
@@ -99,7 +99,7 @@ function videoanimation() {
         mousehover.style.transition = '0s'       
         gsap.to(mousehover,{
             left:dets.clientX,
-            top:dets.clientY +800,
+            top:dets.clientY +850,
             duration:0.3,
             ease: Expo
            
