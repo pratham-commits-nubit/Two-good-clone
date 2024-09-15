@@ -452,7 +452,11 @@ section{
         width: 100%;
         object-fit: cover;
     }
-
+    #mouse-hover {
+        padding: 5vh 8.5vw;
+        font-size: large;
+        pointer-events: none;
+    }
     #cards {
         display: grid;
         row-gap: 2vh;
