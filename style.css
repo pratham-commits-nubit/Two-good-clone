@@ -419,8 +419,8 @@ section{
     .nav-part2 ul .nav-li{
         display: none;
     }
-    .nav-part2 ul .nav-designs{
-        width: 5vw;
+    .nav-part2 ul .nav-designs li a img{
+      width: 3vw;
     }
     #main{
         margin: 0px 3.5vw 0px 3.5vw;
