@@ -20,6 +20,14 @@ nav{
     justify-content: space-between;
     
 }
+#nav-part1{
+    height: 82px;
+    overflow: hidden;
+    
+}
+#nav-part1 svg {
+    display: block;
+}
 .nav-part2 ul{
     display: flex;
     margin-right: 6vw;
@@ -120,6 +128,7 @@ nav{
     opacity: 0;
     justify-self: center;
     align-self: center;
+    z-index: 10000000;
 
 }
 
@@ -456,6 +465,7 @@ section{
         padding: 5vh 8vw;
         font-size: large;
         pointer-events: none;
+        position:sticky;
     }
     #cards {
         display: grid;
