@@ -304,11 +304,12 @@ main {
     font-size: 1vw;
     text-transform: uppercase;
     font-weight: bold;
+    margin-top: 10vh;
 }
 .submit-last{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.2vw;
-    margin-top: 2.5vh;
+    margin-top: 5vh;
     max-width: 20vw ;
     text-align: center;
 
@@ -332,12 +333,12 @@ main {
 
 }
 .elem{
-    width: 30vw;
+    width: 50vw;
 }
 .elem-img{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 1vw;
+    gap: 1.5vw;
 
 }
 
@@ -369,18 +370,18 @@ main {
 .text-elem-1{
     position: relative;
     margin-top: 4vh;
-    max-width: 77%;
+    max-width: 85%;
 
 }
 .text-elem-2{
     position: relative;
     margin-top: 4vh;
-    max-width: 77%;
+    max-width: 70%;
 }
 .text-elem-3{
     position: relative;
     margin-top: 4vh;
-    max-width: 72%;
+    max-width: 68%;
 }
 .text-elem-4{
     position: relative;
@@ -395,7 +396,7 @@ main {
     border-color: #0f0f0fa6;
 }
 footer{
-    min-height: 100vh;
+    max-height: fit-content;
     /* display: grid;
     gap: 10vh; */
 }
@@ -566,12 +567,16 @@ section{
         width: 50%;
         height: 30vh;
     }
+    .elem{
+        margin-top: 3vh;
+        width: 100vw;
+    }
     .text-elem{
         height: fit-content;
+        max-width: 100vw;
     }
     .text-elem .text{
         font-size: large;
-        max-width: 200%;
     }
     .elem-img{
         display: flex;
@@ -579,4 +584,5 @@ section{
         width: auto;
         gap: 6.5vw;
     }
+    
 }
