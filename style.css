@@ -419,8 +419,13 @@ section{
     .nav-part2 ul .nav-li{
         display: none;
     }
-    .nav-part2 ul .nav-designs li a img{
-      width: 3vw;
+    .nav-part2 ul .nav-designs{
+        gap: 5vw;
+    }
+    .nav-img{
+      padding:0vh 1vw;
+      width: 5vw;
+      height: 3vh;
     }
     #main{
         margin: 0px 3.5vw 0px 3.5vw;
