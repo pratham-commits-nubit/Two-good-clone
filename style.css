@@ -11,12 +11,14 @@ header{
     height: 20vh;
     width: 100vw;
     position: fixed;
+    z-index:1000 ;
 }
 nav{
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    
 }
 .nav-part2 ul{
     display: flex;
@@ -404,6 +406,9 @@ section{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 @media (max-width: 600px) {
+    .nav-li{
+        display: none;
+    }
     #main{
         margin: 0px 3.5vw 0px 3.5vw;
     }
@@ -433,6 +438,7 @@ section{
     #cards {
         display: grid;
         row-gap: 2vh;
+        width: 100%;
     }
 
     .card {
