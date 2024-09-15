@@ -532,6 +532,10 @@ section{
         width: 50%;
         height: 30vh;
     }
+    .text-elem{
+        width: 100%;
+        height: fit-content;
+    }
     .elem-img{
         display: flex;
         height: auto;
