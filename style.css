@@ -469,7 +469,7 @@ section{
         padding: 5vh 8vw;
         font-size: large;
         pointer-events: none;
-        position:sticky;
+        
     }
     #cards {
         display: grid;
