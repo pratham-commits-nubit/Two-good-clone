@@ -6,6 +6,7 @@
 
 body {
    min-width: 100vw;
+   max-height: 110vh;
 }
 header{
     height: 20vh;
@@ -428,7 +429,7 @@ section{
 }
 @media (max-width: 600px) {
     body{
-        min-height: 100vh;
+        height: fit-content;
         overflow: visible;
     }
     .nav-part2 ul .nav-li{
