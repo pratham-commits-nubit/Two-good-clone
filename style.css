@@ -46,6 +46,7 @@ nav{
    transition: 0.25s;
 
 }
+
 .nav-img-1:hover{
     height: 1.9vh;
 }
@@ -169,7 +170,7 @@ main {
     left: 12.5%;
     border-radius: 50px;
     height: 8vh;
-    width: 23vw;
+    width: 80%;
     background:palegoldenrod;
 }
 /* #main-body{
@@ -276,7 +277,7 @@ main {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #submit{
-    height: 100vh;
+    height: fit-content;
 }
 .submit-large-text{
     position: relative;
@@ -327,7 +328,7 @@ main {
     display:flex;
     margin-top: 50vh;
     justify-content: space-between;
-    height: 100vh;
+    height: fit-content;
 
 }
 .elem{
@@ -359,37 +360,37 @@ main {
 }
 .text-elem b{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
     max-width: 77%;
-
+   
 }
+
 .text-elem-1{
     position: relative;
-    top: 3.5vh;
+    margin-top: 4vh;
     max-width: 77%;
 
 }
 .text-elem-2{
     position: relative;
+    margin-top: 4vh;
     max-width: 77%;
-    top: 8vh;
 }
 .text-elem-3{
     position: relative;
-    top: 13.5vh;
+    margin-top: 4vh;
     max-width: 72%;
 }
 .text-elem-4{
     position: relative;
-    top: 18vh;
+    margin-top:  4vh;
     text-transform: uppercase;
     max-width: 77%;
 
 }
 .text-elem hr{
     position: relative;
-    top: 19vh;
     width: 12vw;
     border-color: #0f0f0fa6;
 }
@@ -469,7 +470,6 @@ section{
         padding: 5vh 8vw;
         font-size: large;
         pointer-events: none;
-        
     }
     #cards {
         display: grid;
@@ -533,9 +533,6 @@ section{
     .line-anim-text p{
         font-size: xx-small;
     }
-    #submit{
-        height: 55vh;
-    }
     .submit-large-text{
         position: relative;
         bottom: 0px;
@@ -561,6 +558,7 @@ section{
         font-size:small ;
     }
     #docs{
+        margin-top:5vh ;
         display: flex;
         flex-direction: column-reverse;
     }
@@ -569,8 +567,11 @@ section{
         height: 30vh;
     }
     .text-elem{
-        width: 100%;
         height: fit-content;
+    }
+    .text-elem .text{
+        font-size: large;
+        max-width: 200%;
     }
     .elem-img{
         display: flex;
