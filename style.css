@@ -426,6 +426,7 @@ section{
 }
 @media (max-width: 600px) {
     body{
+        min-height: 100vh;
         overflow: visible;
     }
     .nav-part2 ul .nav-li{
