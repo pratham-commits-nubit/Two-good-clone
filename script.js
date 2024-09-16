@@ -11,7 +11,7 @@
  
 // Declaring variables
 let mainvideo = document.querySelector('#video-box')
-let mousehover = document.getElementById('mouse-hover')
+let mousehover = document.querySelector('.mouse-hover')
 let TextTransitionOne = document.querySelector(".mainfirst")
 let TextTransitionSecond = document.querySelector(".mainsecond")
 let productcursor = document.getElementById('cursor')
