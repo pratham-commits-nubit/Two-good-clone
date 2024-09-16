@@ -216,3 +216,14 @@ function productkacursor() {
 
 }    
 productkacursor()
+
+document.querySelector('#mouse-hover').addEventListener('click',()=>{
+  document.querySelector('#video-box > video').controls = document.querySelector('#video-box > video').controls
+  document.querySelector('#video-box > video').muted = false
+  document.querySelector('#video-box > video').volume = 1
+  document.querySelector('#video-box > video').currentTime = 0
+  document.querySelector('#video-box > video').play()
+  document.querySelector('#mouse-hover').style.display = "none";
+  console.log("HELLO ")
+
+})
